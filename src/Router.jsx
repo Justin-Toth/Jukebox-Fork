@@ -4,7 +4,7 @@ import { Admin, Dashboard } from './admin'
 import { Login, Register } from './auth'
 import { Board, Board1, BoardList } from './boards'
 import { Members } from './members'
-import { DevGuide } from './pages'
+import { DevGuide } from './Pages'
 
 const routes = createBrowserRouter([
   {
@@ -49,6 +49,8 @@ const routes = createBrowserRouter([
           {
             path: 'board-1',
             element: <Board1 />,
+
+            
           },
         ],
       },

@@ -1,23 +1,20 @@
-import { ScrollQueue } from '../../components'
-import { Clock } from '../components/Clock'
+import { ScrollQueue } from '../../components';
+import { Clock } from '../Clock/Clock';
 
-import './Board1.css'
+
+import './Board1.css';
 
 export const Board1 = () => {
   return (
-    <div>
-      <header>
-        <h1 className="center">Jukebox</h1>
-      </header>
-      <body>
-        <div>
-          <div className="clock">
-            <Clock></Clock>
-          </div>
-
-          <ScrollQueue></ScrollQueue>
+    <div className="board">
+      <div className="content">
+        <div className="lefty">
+          <Clock />
         </div>
-      </body>
+        <div className="righty">
+          <ScrollQueue />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
